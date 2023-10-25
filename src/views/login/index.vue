@@ -6,16 +6,12 @@
       </div>
 
       <el-form-item>
-        <el-icon :size="20" class="svg-container">
-          <Edit />
-        </el-icon>
+        <svg-icon class="svg-container" icon="user"></svg-icon>
         <el-input v-model="form.username"></el-input>
       </el-form-item>
 
       <el-form-item>
-        <el-icon :size="20" class="svg-container">
-          <Edit />
-        </el-icon>
+        <svg-icon class="svg-container" icon="password"></svg-icon>
         <el-input v-model="form.password"></el-input>
       </el-form-item>
 
@@ -28,7 +24,6 @@
 
 <script setup>
 import { reactive } from 'vue'
-import { Edit } from '@element-plus/icons-vue'
 const form = reactive({
   username: '',
   password: ''
